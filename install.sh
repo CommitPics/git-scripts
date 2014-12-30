@@ -24,7 +24,7 @@ GIT_TEMPLATES_PATH="$HOME/.git-templates"
 GIT_HOOKS_PATH="$GIT_TEMPLATES_PATH/hooks"
 
 # Make sure all the brew dependencies are met
-BREW_DEPS=( git imagesnap imagemagick whereami )
+BREW_DEPS=( imagesnap imagemagick whereami )
 MISSING_BREW_DEPS=()
 
 echo "\nChecking for \`brew\` dependencies:\n "
@@ -67,7 +67,7 @@ $(git remote show origin &> /dev/null ) || echo "\nATTENTION! We could not set p
 
 # Symlink the post-commit script
 echo "\nSymlinking $COMMITFIE_SCRIPT_PATH to $GIT_HOOKS_PATH/post-commit..."
-$(ln -s $COMMITFIE_SCRIPT_PATH $GIT_HOOKS_PATH/post-commit &> /dev/null) || $(echo "\nERROR! You already have a post-commit file. Remove it to continue the process" && exit 1)
+$(ln -s $COMMITFIE_SCRIPT_PATH $GIT_HOOKS_PATH/post-commit &> /dev/null) || { echo "\nERROR! You already have a post-commit file. Remove it to continue the process." ; exit 1 }
 
 echo \
 "\nCongratulation! git-commitfie is now ready to be used!
