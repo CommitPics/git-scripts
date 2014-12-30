@@ -1,8 +1,8 @@
-# Git Commit Scripts
+# Git Commitfie Scripts
 
 ## About
 
-The [git-scripts](https://github.com/CommitPics/git-scripts) contains all the scripts needed to run [Git Commit Pics](https://github.com/CommitPics/git-commitpics) on your computer, [Github Pages](https://pages.github.com/) or on your own [Jekyll](http://jekyllrb.com/) instance.
+The [git-scripts](https://github.com/Commitfie/git-scripts) contains all the scripts needed to run [Git Commitfie](https://github.com/Commitfie/git-commitpics) on your computer, [Github Pages](https://pages.github.com/) or on your own [Jekyll](http://jekyllrb.com/) instance.
 
 ## What does it do
 
@@ -17,7 +17,7 @@ Coming soon...
 ```
 The MIT License (MIT)
 
-Copyright (c) 2014 Commit Pics - ladislas at weareleak dot com
+Copyright (c) 2014 Commitfie - ladislas at weareleak dot com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
