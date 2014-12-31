@@ -13,3 +13,6 @@ insert_final_newline = true
 # Trailing whitespace is significant in markdown files.
 [*.md]
 trim_trailing_whitespace = false
+
+[*.py]
+indent_style = space
