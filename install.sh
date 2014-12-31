@@ -76,6 +76,7 @@ git submodule init && git submodule update || exit 1
 echo "\nRemoving everything related to git and starting anew..."
 rm -rf .git .gitmodule
 git init
+rm -f .git/hooks/post-commit
 git remote add origin $GITHUB_DOMAIN/$GITHUB_USERNAME/git-commitfie
 $(git remote show origin &> /dev/null ) || echo "\nATTENTION! It seems that there is no repository pointing to\n\t$GITHUB_DOMAIN/$GITHUB_USERNAME/git-commitfie\nWe could not set the remote repo properly, you'll have to do it on your own."
 
